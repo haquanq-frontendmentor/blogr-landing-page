@@ -1,0 +1,95 @@
+.footer {
+    background-color: var(--color-gray-900);
+    border-top-right-radius: 6.25rem;
+
+    a,
+    button {
+        --focus-outline-color: var(--color-white);
+    }
+
+    &__container {
+        padding-block: 4.375rem 4.9375rem;
+    }
+
+    &__nav {
+        font-size: var(--text-md);
+    }
+
+    &__nav-list {
+        display: grid;
+        justify-items: center;
+        text-align: center;
+        gap: 3.5rem;
+
+        @media (--tablet) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (--laptop) {
+            grid-template-columns: repeat(4, 1fr);
+            text-align: initial;
+            justify-items: initial;
+        }
+    }
+
+    &__nav-item:first-child {
+        padding-block-end: 1.5rem;
+
+        @media (--tablet) {
+            grid-column: span 3;
+        }
+
+        @media (--laptop) {
+            grid-column: initial;
+        }
+    }
+
+    &__nav-item-label {
+        display: block;
+        font-weight: var(--font-medium);
+        color: var(--color-white);
+        margin-block-end: 2.3125rem;
+    }
+
+    &__nav-sub-list {
+        font-family: var(--font-secondary);
+        color: var(--color-gray-300);
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    &__nav-sub-link {
+        position: relative;
+        transition: color 200ms ease;
+
+        @media (prefers-reduced-motion: reduce) {
+            transition: none;
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            display: block;
+            top: calc(100% + var(--focus-outline-offset));
+            left: 50%;
+            transform: translateX(-50%);
+            border-bottom: 1px solid var(--color-white);
+            transition: width 200ms ease;
+
+            @media (prefers-reduced-motion: reduce) {
+                transition: none;
+            }
+        }
+
+        @media (hover: hover) {
+            &:hover {
+                color: var(--color-white);
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}

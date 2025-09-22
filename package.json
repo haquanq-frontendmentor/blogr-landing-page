@@ -1,0 +1,25 @@
+{
+  "name": "blogr-landing-page",
+  "description": "Solution for frontendmentor.io challenge: blogr-landing-page",
+  "author": "haquanq",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite serve --port 5000",
+    "lint:css": "stylelint ./src/styles/**/*.css --fix",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "cssnano": "^7.0.7",
+    "postcss-custom-media": "^11.0.6",
+    "postcss-import": "^16.1.1",
+    "postcss-load-config": "^6.0.1",
+    "postcss-nested": "^7.0.2",
+    "postcss-preset-env": "^10.2.3",
+    "postcss-sort-media-queries": "^5.2.0",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard": "^38.0.0",
+    "typescript": "^5.9.2",
+    "vite": "^6.3.5"
+  }
+}

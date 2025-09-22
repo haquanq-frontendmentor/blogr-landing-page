@@ -1,0 +1,74 @@
+:root {
+    --color-red-400-hsl: 355, 100%, 74%;
+    --color-red-400: hsl(355, 100%, 74%);
+    --color-red-500-hsl: 356, 100%, 66%;
+    --color-red-500: hsl(356, 100%, 66%);
+    --color-red-550-hsl: 353, 100%, 62%;
+    --color-red-550: hsl(353, 100%, 62%);
+
+    --color-orange-300-hsl: 13, 100%, 72%;
+    --color-orange-300: hsl(13, 100%, 72%);
+
+    --color-blue-900-hsl: 208, 49%, 24%;
+    --color-blue-900: hsl(208, 49%, 24%);
+
+    --color-purple-900-hsl: 237, 23%, 31%;
+    --color-purple-900: hsl(237, 23%, 31%);
+    --color-purple-950-hsl: 237, 17%, 21%;
+    --color-purple-950: hsl(237, 17%, 21%);
+
+    --color-gray-100: hsl(240, 7%, 94%);
+    --color-gray-300: hsl(207, 13%, 74%);
+    --color-gray-600: hsl(207, 13%, 34%);
+    --color-gray-900: hsl(240, 10%, 16%);
+
+    --color-white: hsl(0, 100%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+
+    --gradient-tomato: linear-gradient(
+        90deg,
+        hsla(var(--color-orange-300-hsl), 100%),
+        hsla(var(--color-red-550-hsl), 100%)
+    );
+    --gradient-purple: linear-gradient(
+        90deg,
+        hsla(var(--color-purple-950-hsl), 100%),
+        hsla(var(--color-purple-900-hsl), 100%)
+    );
+
+    --shadow-sm: rgba(100, 100, 111, 20%) 0px 7px 29px 0px;
+    --shadow-md: rgba(255, 255, 255, 10%) 0px 1px 1px 0px inset, rgba(50, 50, 93, 25%) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 30%) 0px 30px 60px -30px;
+
+    --font-primary: "Overpass", system-ui, sans-serif;
+    --font-secondary: "Ubuntu", system-ui, sans-serif;
+    --font-thin: 300;
+    --font-normal: 400;
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --text-sm: 0.875rem;
+    --text-2sm: 0.9375rem;
+    --text-base: 1rem;
+    --text-md: 1.125rem;
+    --text-lg: 1.25rem;
+    --text-xl: 1.5rem;
+    --text-2xl: 1.75rem;
+    --text-4xl: 2.25rem;
+
+    --leading-none: 1;
+
+    --rounded-full: 9999px;
+
+    --focus-outline-width: 3px;
+    --focus-outline-offset: 3px;
+    --focus-outline-style: dashed;
+    --focus-outline-color: var(--color-gray-900);
+
+    --container-max-width: 69.5rem;
+    --container-padding-inline: 1.5rem;
+}
+
+@custom-media --tablet (min-width: 48em);
+@custom-media --laptop (min-width: 64em);

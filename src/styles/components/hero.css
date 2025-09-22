@@ -1,0 +1,32 @@
+.hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: clamp(12.5rem, 10.0549rem + 10.4326vw, 15.0625rem);
+
+    &__title {
+        padding-inline: 1rem;
+        font-size: clamp(2.25rem, 0.5802rem + 7.1247vw, 4rem);
+        color: var(--color-white);
+        line-height: clamp(2.75rem, 1.5573rem + 5.0891vw, 4rem);
+        letter-spacing: -0.04em;
+        margin-block-end: clamp(0.875rem, 0.4575rem + 1.7812vw, 1.3125rem);
+    }
+
+    &__description {
+        font-size: var(--text-md);
+        color: var(--color-white);
+        margin-block-end: 2.9375rem;
+        line-height: 1.5rem;
+
+        @media (--tablet) {
+            font-size: var(--text-lg);
+        }
+    }
+
+    &__cta {
+        display: flex;
+        gap: 1rem;
+    }
+}

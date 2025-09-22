@@ -1,0 +1,34 @@
+.header {
+    position: relative;
+    border-bottom-left-radius: 6.25rem;
+    background: var(--gradient-tomato);
+    overflow: hidden;
+
+    a,
+    button {
+        --focus-outline-color: var(--color-white);
+    }
+
+    &::before {
+        pointer-events: none;
+        content: "";
+        display: block;
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        background-image: url("/assets/images/bg-pattern-intro-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-position: center center;
+
+        @media (--tablet) {
+            background-image: url("/assets/images/bg-pattern-intro-desktop.svg");
+        }
+    }
+
+    &__container {
+        position: relative;
+        z-index: 10;
+        height: 37.5rem;
+    }
+}
