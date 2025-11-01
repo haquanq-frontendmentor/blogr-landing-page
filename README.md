@@ -3,7 +3,7 @@
 This is a solution to the [Blogr landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <p>
-  <a href="">
+  <a href="https://www.frontendmentor.io/solutions/mobile-responsive-landing-page-with-dropdownexpand-collapse-submenus-seYct7msx4">
     <img
       alt="Solution post"
       src="https://img.shields.io/badge/Frontendmentor-blue?label=Solution%20on"
