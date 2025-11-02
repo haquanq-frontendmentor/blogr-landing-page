@@ -1,7 +1,14 @@
 {
+  "name": "Blogr Landing Page",
   "favorite": false,
-  "color:": "#ff4256",
+  "colors": {
+    "brand": "#ff4256"
+  },
+  "images": {
+    "preview": "https://raw.githubusercontent.com/haquanq-frontendmentor/blogr-landing-page/main/docs/preview.jpg"
+  },
   "frontendmentor": {
+    "difficulty": "junior",
     "challengeUrl": "https://www.frontendmentor.io/challenges/blogr-landing-page-EX2RLAApP",
     "solutionUrl": "https://www.frontendmentor.io/solutions/mobile-responsive-landing-page-with-dropdownexpand-collapse-submenus-seYct7msx4"
   }
