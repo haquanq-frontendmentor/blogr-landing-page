@@ -1,6 +1,6 @@
 {
   "name": "Blogr Landing Page",
-  "favorite": false,
+  "featured": false,
   "colors": {
     "brand": "#ff4256"
   },
